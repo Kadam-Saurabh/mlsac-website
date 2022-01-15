@@ -524,6 +524,10 @@ h6 {
     background-size: cover;
 }
 
+
+
+
+
 #home .container,
 #home .container-fluid {
     padding-top: 84px;
@@ -589,6 +593,7 @@ h6 {
     }
     #home .hero-img img {
         width: 50%;
+        
     }
 }
 
@@ -608,7 +613,8 @@ h6 {
 
 @media (max-width: 575px) {
     #home .hero-img img {
-        width: 80%;
+        
+        max-width: 100%;
     }
 }
 
