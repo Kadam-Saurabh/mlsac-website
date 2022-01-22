@@ -50,12 +50,14 @@ body{
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
+ 
 }
 
 
 
 .first{
   display: flex;
+  flex-wrap: wrap;
 }
 .container:hover{
   height: 420px;
