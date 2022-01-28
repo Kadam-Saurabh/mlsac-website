@@ -5,6 +5,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: #444444;
+   
 }
 
 a {
@@ -201,6 +202,7 @@ h6 {
     transition: all 0.5s;
     z-index: 997;
     padding: 20px 0;
+    
 }
 
 #header.header-scrolled,
@@ -208,6 +210,7 @@ h6 {
     background: linear-gradient( 45deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 131, 244, 0.9) 100%), url("../img/hero-bg.jpg") center center no-repeat;
     background-size: cover;
     padding: 12px 0;
+    position: fixed;
 }
 
 #header .logo {
@@ -1154,7 +1157,7 @@ section {
     display: inline-block;
     height: 1px;
     width: 550px;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -1164,7 +1167,7 @@ section {
 }
 
 .section-header.has-bottom-sep.light-sep::before {
-    background-color: rgba(255, 255, 255, .05)
+    background-color: rgb(0, 0, 0)
 }
 
 @media only screen and (max-width:1200px) {
@@ -1343,36 +1346,15 @@ section {
 # Features
 --------------------------------------------------------------*/
 
-.features .icon-box h4 {
-    font-size: 20px;
-    font-weight: 700;
-    margin: 5px 0 10px 60px;
-}
 
-.features .icon-box i {
-    font-size: 40px;
-    float: left;
-    color: #5846f9;
-}
-
-.features .icon-box p {
-    font-size: 15px;
-    color: #848484;
-    margin-left: 60px;
-}
 
 .features .image {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 400px;
+    min-height: 600px;
 }
 
-.eventimage {
-    width: fit-content;
-    height: 85vh;
-    padding-left: 100px;
-}
 
 @media (max-width: 767px) {
     .eventimage {
@@ -2281,4 +2263,22 @@ section {
 }
 
 
+.event .container{
+    display: flex;
+    flex-direction: row;
+   justify-content:space-around;
+    flex-grow: 1;
+    min-height: 400px;
+}
 
+.event .container .div{
+    margin: 20px;
+    padding: 10px;
+    
+}
+.event .container .detail {
+    justify-content: flex-start;
+}
+.event{
+    background-color: rgb(255, 255, 255);
+}
