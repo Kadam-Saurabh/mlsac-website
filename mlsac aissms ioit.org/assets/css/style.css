@@ -2317,11 +2317,18 @@ section {
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
     font-size: 16px;
-    margin: 4px 2px;
+    /* margin: 25px 95px; */
     transition-duration: 0.4s;
     cursor: pointer;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-flow: row;
+    justify-content: space-around;
+    align-content: center;
+    
+
   }
   
   .button1 {
@@ -2341,7 +2348,7 @@ section {
     text-align: center;
     text-decoration: none;
     display:block;
-    font-size: 28px;
+    font-size: 24px;
     margin: 30px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -2358,3 +2365,13 @@ section {
     background-color: #000000;
     color: white;
   }
+
+
+  /* .abc .button1{
+      width: fit-content;
+
+  }
+
+  .def .button2{
+      width: 350px;
+  } */
